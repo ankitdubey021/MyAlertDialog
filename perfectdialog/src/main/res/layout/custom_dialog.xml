@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+
+        app:cardUseCompatPadding="true"
+        android:id="@+id/cv"
+        app:cardBackgroundColor="@android:color/white"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5sp"
+
+
+                >
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Yardstikk"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/header"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toRightOf="@+id/icon"
+                    />
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@android:color/holo_blue_light"
+                    android:layout_below="@+id/header"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="5sp"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="10sp"
+                android:paddingBottom="10sp"
+                android:paddingTop="15sp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All questions has been completed?"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/title"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:paddingBottom="10sp"
+
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please Check them before submitting"
+                    android:textSize="16sp"
+                    android:id="@+id/subtitle"
+                    android:visibility="gone"
+                    android:layout_marginBottom="5sp"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="20sp"
+                android:orientation="horizontal"
+                android:paddingBottom="10sp"
+
+                >
+                <Button
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Button.NO"
+                    android:text="Cancel"
+                    android:id="@+id/negativeBtn"
+                    android:visibility="gone"
+
+                    />
+
+                <Button
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Button.YES"
+                    android:text="Ok"
+                    android:id="@+id/positiveBtn"
+
+                    />
+
+    <!--something-->
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
