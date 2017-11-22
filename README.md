@@ -3,7 +3,7 @@
 <img src="https://github.com/ankitdubey021/MyAlertDialog/blob/master/snapshot%5B1%5D.png" width="300" height="500"/>
 
 ```diff
-+ compile 'com.github.ankitdubey021:MyAlertDialog:1.0.1'
+- compile 'com.github.ankitdubey021:MyAlertDialog:1.0.1'
 ```
 
 ```diff
