@@ -3,7 +3,7 @@
 <img src="https://github.com/ankitdubey021/MyAlertDialog/blob/master/snapshot%5B1%5D.png" width="300" height="500"/>
 
 ```diff
-+ compile 'com.github.ankitdubey021:MySnack:2.2'
++ compile 'com.github.ankitdubey021:MyAlertDialog:1.0.1'
 ```
 
 ```diff
@@ -14,13 +14,13 @@
                 //.setIcon(ContextCompat.getDrawable(this, R.drawable.animlogo))
                 .setPositiveBtnText("Yes")
                 .setNegativeBtnText("No")
-                .setPositiveBtnListener(new EasyCustomDialogListener() {
+                .onConfirm(new EasyCustomDialogListener() {
                     @Override
                     public void execute() {
                         Toast.makeText(getApplicationContext(),"Ok",Toast.LENGTH_LONG).show();
                     }
                 })
-                .setNegativeBtnListener(new EasyCustomDialogListener() {
+                .onCancel(new EasyCustomDialogListener() {
                     @Override
                     public void execute() {
                         Toast.makeText(getApplicationContext(),"Cancel",Toast.LENGTH_LONG).show();
