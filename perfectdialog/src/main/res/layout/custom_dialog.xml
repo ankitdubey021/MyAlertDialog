@@ -85,7 +85,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="All questions has been completed?"
+                    android:text="Some text"
                     android:textSize="17sp"
                     android:textColor="@android:color/black"
                     android:id="@+id/title"
@@ -111,7 +111,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Please Check them before submitting"
+                    android:text="some subtitle"
                     android:textSize="16sp"
                     android:id="@+id/subtitle"
                     android:visibility="gone"
@@ -136,7 +136,7 @@
                     android:layout_width="80sp"
                     android:layout_height="wrap_content"
                     android:theme="@style/Button.NO"
-                    android:text="Cancel"
+                    android:text="No"
                     android:id="@+id/negativeBtn"
                     android:visibility="gone"
 
@@ -146,7 +146,7 @@
                     android:layout_width="80sp"
                     android:layout_height="wrap_content"
                     android:theme="@style/Button.YES"
-                    android:text="Ok"
+                    android:text="Yes"
                     android:id="@+id/positiveBtn"
 
                     />

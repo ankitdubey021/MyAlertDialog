@@ -2,12 +2,12 @@
 
     <!-- Base application theme. -->
     <style name="Button.YES" parent="Widget.AppCompat.Button.Colored">
-        <item name="colorButtonNormal">@android:color/darker_gray</item>
+        <item name="colorButtonNormal">@android:color/holo_blue_light</item>
         <item name="android:textColor">#ffffff</item>
     </style>
 
     <style name="Button.NO" parent="Widget.AppCompat.Button.Colored">
-        <item name="colorButtonNormal">@android:color/holo_blue_light</item>
+        <item name="colorButtonNormal">@android:color/darker_gray</item>
         <item name="android:textColor">#ffffff</item>
     </style>
 </resources>
