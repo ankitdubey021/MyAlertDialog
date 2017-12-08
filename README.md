@@ -2,20 +2,15 @@
 
 <img src="https://github.com/ankitdubey021/MyAlertDialog/blob/master/snapshot%5B1%5D.png" width="300" height="500"/>
 
-In app level build.gradle file, add the library 
-```diff
-- compile 'com.github.ankitdubey021:MyAlertDialog:1.0.1'
+## Releases
+**this is the first release of library, which contains buttons in rectangle form.**
+```groovy
+compile 'com.github.ankitdubey021:MyAlertDialog:1.0.2'
 ```
 
-In project level build file, add the jitpack repository
-
-```diff
-- allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-  }
+**In this release, buttons are added in circular shape.**
+```groovy
+compile 'com.github.ankitdubey021:MyAlertDialog:1.0.3'
 ```
 
 
