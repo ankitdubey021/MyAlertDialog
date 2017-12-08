@@ -21,7 +21,8 @@ public class EasyCustomDialog {
     private Activity activity;
     private Drawable icon;
     private EasyCustomDialogListener pListener,nListener;
-    int pBtnColor,nBtnColor;
+    private int pBtnColor,nBtnColor;
+    private boolean cancel;
 
 
 
@@ -37,6 +38,7 @@ public class EasyCustomDialog {
         this.negativeBtnText=builder.negativeBtnText;
         this.pBtnColor=builder.pBtnColor;
         this.nBtnColor=builder.nBtnColor;
+        this.cancel=builder.cancel;
     }
 
 
@@ -45,7 +47,8 @@ public class EasyCustomDialog {
         private Activity activity;
         private Drawable icon;
         private EasyCustomDialogListener pListener,nListener;
-        int pBtnColor,nBtnColor;
+        private int pBtnColor,nBtnColor;
+        private boolean cancel;
 
         public Builder(Activity activity,String title){
             this.activity=activity;
@@ -100,6 +103,10 @@ public class EasyCustomDialog {
             return this;
         }
 
+        public Builder isCancellable(boolean cancel){
+            this.cancel=cancel;
+            return this;
+        }
 
         public EasyCustomDialog build(){
             TextView headerTv,titleTv,subTitleTv;
@@ -110,7 +117,10 @@ public class EasyCustomDialog {
 
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialog.setCancelable(false);
+
+
+            dialog.setCancelable(cancel);
+
             dialog.setContentView(R.layout.custom_dialog);
 
             //getting resources
