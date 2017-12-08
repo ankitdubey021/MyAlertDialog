@@ -3,9 +3,9 @@
 
     <solid android:color="@android:color/holo_blue_dark" />
 
-    <stroke
+    <!--<stroke
         android:width="2dp"
-        android:color="#ffffff" />
+        android:color="#ffffff" />-->
 
     <corners
         android:bottomLeftRadius="40dp"

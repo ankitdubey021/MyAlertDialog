@@ -133,21 +133,24 @@
 
                 >
                 <Button
-                    android:layout_width="80sp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
                     android:theme="@style/Button.NO"
                     android:text="No"
                     android:id="@+id/negativeBtn"
                     android:visibility="gone"
+                    android:background="@drawable/curved_shape2"
 
                     />
 
                 <Button
-                    android:layout_width="80sp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
                     android:theme="@style/Button.YES"
                     android:text="Yes"
+                    android:layout_marginLeft="5dp"
                     android:id="@+id/positiveBtn"
+                    android:background="@drawable/curved_shape"
 
                     />
 
